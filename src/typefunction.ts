@@ -1,21 +1,18 @@
-type checkResponse = (req:number, res:number) => {};
+type checkResponse = (req:number, res:number) => number;
 
 const saveuser:checkResponse = (req, res) =>{
-    return {
-        name:req,
-        age:res
-    }
+    return req+res;
 }
 const resutl = saveuser(10, 20)
 console.log(resutl)
 
 
-type erroerChecker = (req:string, res:string) => {}
+type erroerChecker = (req:string, res:string) => {name:string, age:string}
 
 const getError:erroerChecker = (req="default 1", res="default 2") =>{
     return {
-        error:req,
-        message:res,
+        name:req,
+        age:res,
     }
 }
 

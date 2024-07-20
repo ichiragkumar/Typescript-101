@@ -6,19 +6,25 @@ type User ={
 
 }
 
-type loggedIn = boolean;
-type txnBalance = number;
+
 type userName = string | number;
 
 
-let mixPaneluserAge:userName= 10;
-let mixPanelUser:userName= "chirag";
+const mixPaneluserAge:userName= 10;
+const mixPanelUser:userName= "chirag";
 
 
-let superUser:User = {
+console.log(mixPanelUser);
+console.log(mixPaneluserAge);
+
+
+const superUser:User = {
     name:"harshit",
     age:10
 }
+
+
+console.log(superUser);
 
 
 

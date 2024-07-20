@@ -1,16 +1,24 @@
 
+const a:string = "chirag";
+console.log(a);
+
+const namFull:string = "kumar";
+console.log(namFull);
 
 
-let a:string = "chirag";
-let namFull:string = "kumar";
-
-let isLoggedIn:boolean = true;
+const isLoggedIn:boolean = true;
+console.log(isLoggedIn);
 
 
 
-let userName = <string>"chirag";
+
+const userName = <string>"chirag";
+console.log(userName);
+
 let sirNAme : string | number = "kumar";
 sirNAme=10;
+console.log(sirNAme);
+
 
 
 
