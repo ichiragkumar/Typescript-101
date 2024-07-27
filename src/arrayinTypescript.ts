@@ -22,17 +22,16 @@ console.log(details);
 
 
 const arrayofResponse:Array<{name:string, age:number, isLoggedIn:boolean}> = [
-    {
-        name: "John",
-        age:34,
-        isLoggedIn:true
-
-    },
-    {
-        name:"Rohit",
-        age:30,
-        isLoggedIn:false
-    }
+  {
+    name: "John",
+    age:34,
+    isLoggedIn:true
+  },
+  {
+    name:"Rohit",
+    age:30,
+    isLoggedIn:false
+  }
 ]
 
 console.log(arrayofResponse);

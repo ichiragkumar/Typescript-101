@@ -8,9 +8,9 @@ type UserProfile = {
 
 
 const newUerProfiler:UserProfile = {
-    height:190,
-    weight:90,
-    gender:true,
+  height:190,
+  weight:90,
+  gender:true,
 }
 
 console.log(newUerProfiler);
@@ -28,10 +28,10 @@ type txnData =  {
 
 
 const newTxnData:txnData = {
-    amount:100,
-    address:"123 Main Street",
-    name:"John Doe",
-    email:"johndoe@gmail.com",
+  amount:100,
+  address:"123 Main Street",
+  name:"John Doe",
+  email:"johndoe@gmail.com",
 }
 console.log(newTxnData);
 

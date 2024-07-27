@@ -16,11 +16,13 @@ const mixPanelUser:userName= "chirag";
 
 console.log(mixPanelUser);
 console.log(mixPaneluserAge);
-
+console.log(mixPanelUser);
+console.log(mixPaneluserAge);console.log(mixPanelUser);
+console.log(mixPaneluserAge);
 
 const superUser:User = {
-    name:"harshit",
-    age:10
+  name:"harshit",  
+  age:10
 }
 
 
