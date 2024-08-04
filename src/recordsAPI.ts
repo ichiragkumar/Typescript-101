@@ -58,3 +58,35 @@ const users2: Users2 = {
 };
 
 console.log(users2);
+
+console.log("| -------------------------- |");
+//TODO: 2. Maps in Typescript || Though it's javscript concept
+
+// 1. Map is better becuase ,we have acces to get/set methods
+// 2. As compare to Records
+type TodoTaks = {
+  taskId: string;
+  endDate: Date;
+  points: number;
+  slugs: string;
+};
+
+const toods = new Map<string, TodoTaks>();
+toods.set("1", {
+  taskId: "1",
+  endDate: new Date(),
+  points: 100,
+  slugs: "1,2,3",
+});
+toods.set("2", {
+  taskId: "2",
+  endDate: new Date(),
+  points: 200,
+  slugs: "1,2,3",
+});
+
+const task1 = toods.get("1");
+const task2 = toods.get("2");
+
+console.log(task1);
+console.log(task2);
