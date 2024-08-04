@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "express": "^4.19.2"
+    "eslint-config-airbnb": "^19.0.4",
+    "expres": "^0.0.5",
+    "express": "^4.19.2",
+    "zod": "^3.23.8"
   },
   "name": "101",
   "description": "1. index.js Baisc",
@@ -10,13 +13,14 @@
   "devDependencies": {
     "@eslint/js": "^9.7.0",
     "@types/express": "^4.17.21",
-    "eslint": "^9.7.0",
+    "eslint": "^8.2.0",
     "globals": "^15.8.0",
+    "typescript": "^5.5.3",
     "typescript-eslint": "^7.16.1"
   },
   "scripts": {
     "dev": "node dist/main.js",
-    "lint":"eslint ."
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
