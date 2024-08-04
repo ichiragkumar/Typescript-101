@@ -15,7 +15,8 @@ console.log(errorResult);
 function hello() {
     console.log("welcome");
 }
+hello();
 function callme() {
     return "hii";
 }
-hello();
+callme();
