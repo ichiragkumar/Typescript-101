@@ -8,7 +8,7 @@ interface UserDB {
 
 // whenever you do a database call , specially in this case you will get this type
 // you have the object in the pre-defined shape
-const proUser: UserDB = findOne({ email: "test@gmail.com" });
+//const proUser: UserDB = findOne({ email: "test@gmail.com" });
 
 //TODO:  given you can only change
 // 1. name
@@ -46,3 +46,65 @@ type Txns = Pick<
   "from" | "To" | "transactionHash" | "message" | "status"
 >;
 function validateTransaction() {}
+
+//TODO:  Partial - select partially
+interface Quiz {
+  question: string;
+  answer: string;
+  correct: boolean;
+  user: string;
+  date: Date;
+  id: string;
+}
+
+const quizes = [
+  {
+    question: "What is the name of the first computer programmer?",
+    answer: "Ada Lovelace",
+    correct: false,
+    user: "Ada Lovelace",
+    date: new Date(),
+    id: "1",
+  },
+  {
+    question: "What is the name of the first computer programmer?",
+    answer: "Ada Lovelace",
+    correct: false,
+    user: "Ada Lovelace",
+    date: new Date(),
+    id: "2",
+  },
+];
+
+function getQuiz(id: string): Quiz | undefined {
+  return quizes.find((quiz: Quiz) => quiz.id === id);
+}
+
+console.log(getQuiz("1"));
+console.log(getQuiz("2"));
+
+//TODO:  Adding Partial types to the existing type
+
+// TODO: 1 First Pick the existing type
+type QuizPartial = Pick<Quiz, "question" | "answer" | "correct">;
+
+//TODO: 2 Add Partial to the existing type
+type updateQuizProps = Partial<QuizPartial>;
+
+function updateQuiz(updateProps: updateQuizProps) {
+  // all param are optional now
+}
+
+//TODO: 3 , now the function not complaining, because all params are optional
+
+const result12 = updateQuiz({
+  question: "What is the name of the first computer programmer?",
+});
+const result13 = updateQuiz({
+  question: "What is the name of the first computer programmer?",
+  answer: "1",
+});
+
+//TODO: Output
+console.log(result12);
+console.log(result13);
